@@ -1,0 +1,91 @@
+//LOCAL HOST
+
+###GET all users
+GET http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+[
+  {
+    "_id": "672ebabf7b71458a88075cf1",
+    "firstName": "David",
+    "lastName": "Chinchilla",
+    "email": "dchinchilla@fakeemail.com",
+    "favoriteColor": "blue",
+    "birthday": "1992-05-14T00:00:00.000Z"
+  },
+  {
+    "_id": "672ebc187b71458a88075cf2",
+    "firstName": "Danna",
+    "lastName": "Rodriguez",
+    "email": "drodriguez@fakeemail.com",
+    "favoriteColor": "green",
+    "birthday": "1995-07-20T00:00:00.000Z"
+  },
+  {
+    "_id": "672ebc487b71458a88075cf3",
+    "firstName": "Cristiana",
+    "lastName": "Rati",
+    "email": "crati@fakeemail.com",
+    "favoriteColor": "red",
+    "birthday": "1988-11-30T00:00:00.000Z"
+  }
+]
+
+####GET Single user by id
+GET http://localhost:3000/users/672ebabf7b71458a88075cf1 HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "672ebabf7b71458a88075cf1",
+  "firstName": "David",
+  "lastName": "Chinchilla",
+  "email": "dchinchilla@fakeemail.com",
+  "favoriteColor": "blue",
+  "birthday": "1992-05-14T00:00:00.000Z"
+}
+
+// PRODUCTION
+
+###GET all users
+GET https://project1-m01i.onrender.com/users HTTP/1.1
+content-type: application/json
+
+[
+  {
+    "_id": "672ebabf7b71458a88075cf1",
+    "firstName": "David",
+    "lastName": "Chinchilla",
+    "email": "dchinchilla@fakeemail.com",
+    "favoriteColor": "blue",
+    "birthday": "1992-05-14T00:00:00.000Z"
+  },
+  {
+    "_id": "672ebc187b71458a88075cf2",
+    "firstName": "Danna",
+    "lastName": "Rodriguez",
+    "email": "drodriguez@fakeemail.com",
+    "favoriteColor": "green",
+    "birthday": "1995-07-20T00:00:00.000Z"
+  },
+  {
+    "_id": "672ebc487b71458a88075cf3",
+    "firstName": "Cristiana",
+    "lastName": "Rati",
+    "email": "crati@fakeemail.com",
+    "favoriteColor": "red",
+    "birthday": "1988-11-30T00:00:00.000Z"
+  }
+]
+
+###GET Single user by id
+GET https://project1-m01i.onrender.com/users/672ebabf7b71458a88075cf1 HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "672ebabf7b71458a88075cf1",
+  "firstName": "David",
+  "lastName": "Chinchilla",
+  "email": "dchinchilla@fakeemail.com",
+  "favoriteColor": "blue",
+  "birthday": "1992-05-14T00:00:00.000Z"
+}
