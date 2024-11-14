@@ -131,3 +131,32 @@ content-type: application/json
   "favoriteColor": "blue",
   "birthday": "1992-05-14T00:00:00.000Z"
 }
+
+###POST add a user
+POST https://project1-m01i.onrender.com/users/ HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Dolores",
+  "lastName": "Mendez",
+  "email": "dmendez@fakeemail.com",
+  "favoriteColor": "blue",
+  "birthday": "1993-05-17T00:00:00.000Z"
+}
+
+
+###PUT update a user
+PUT https://project1-m01i.onrender.com/users/672ebabf7b71458a88075cf1 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "David",
+  "lastName": "Mendez",
+  "email": "dchinchilla@fakeemail.com",
+  "favoriteColor": "blue",
+  "birthday": "1992-05-15T00:00:00.000Z"
+}
+
+###DELETE a user
+DELETEhttps://project1-m01i.onrender.com/users/67356e9842fc66f0a6aaa0cc HTTP/1.1
+content-type: application/json
