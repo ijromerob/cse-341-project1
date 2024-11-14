@@ -44,6 +44,48 @@ content-type: application/json
   "birthday": "1992-05-14T00:00:00.000Z"
 }
 
+###GET Single user by id
+GET https://project1-m01i.onrender.com/users/672ebabf7b71458a88075cf1 HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "672ebabf7b71458a88075cf1",
+  "firstName": "David",
+  "lastName": "Chinchilla",
+  "email": "dchinchilla@fakeemail.com",
+  "favoriteColor": "blue",
+  "birthday": "1992-05-14T00:00:00.000Z"
+}
+
+###POST add a user
+POST http://localhost:3000/users/ HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Dolores",
+  "lastName": "Mendez",
+  "email": "dmendez@fakeemail.com",
+  "favoriteColor": "blue",
+  "birthday": "1993-05-17T00:00:00.000Z"
+}
+
+
+###PUT update a user
+PUT http://localhost:3000/users/672ebabf7b71458a88075cf1 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "David",
+  "lastName": "Mendez",
+  "email": "dchinchilla@fakeemail.com",
+  "favoriteColor": "blue",
+  "birthday": "1992-05-15T00:00:00.000Z"
+}
+
+###DELETE a user
+DELETE http://localhost:3000/users/67356e9842fc66f0a6aaa0cc HTTP/1.1
+content-type: application/json
+
 // PRODUCTION
 
 ###GET all users
